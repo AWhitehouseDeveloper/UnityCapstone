@@ -1,39 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwitchTab : MonoBehaviour
 {
-    public List<GameObject> sliders, styles;
+    public List<GameObject> hidden = new List<GameObject>();
     public string tag;
+    public Sprite sprite;
+    public Image background;
 
     public void OnClick()
     {
-        if(sliders.Count > 0 && styles.Count > 0)
+        Debug.Log(tag);
+        foreach (GameObject obj in hidden)
         {
-            foreach(GameObject slider in sliders)
+            if (obj.tag == tag)
             {
-                if (slider.CompareTag(tag))
-                {
-                    slider.SetActive(true);
-                }
-                else
-                {
-                    slider.SetActive(false);
-                }
+                obj.SetActive(true);
             }
-            
-            foreach(GameObject style in styles)
+            else
             {
-                if (style.CompareTag(tag))
-                {
-                    style.SetActive(true);
-                }
-                else
-                {
-                    style.SetActive(false);
-                }
+                obj.SetActive(false);
             }
         }
+
+        background.sprite = sprite;
     }
 }

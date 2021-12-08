@@ -9,6 +9,31 @@ public class ColourChange : MonoBehaviour
     public string colour;
     public Slider slider;
     // Update is called once per frame
+
+    public void Start()
+    {
+        foreach(Image sprite in sprites)
+        {
+            switch (colour)
+            {
+                case "red":
+                    sprite.color = new Color(slider.value, sprite.color.g, sprite.color.b);
+                    break;
+
+                case "green":
+                    sprite.color = new Color(sprite.color.r, slider.value, sprite.color.b);
+                    break;
+
+                case "blue":
+                    sprite.color = new Color(sprite.color.r, sprite.color.g, slider.value);
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+
     public void OnChange()
     {
         foreach (Image sprite in sprites)
