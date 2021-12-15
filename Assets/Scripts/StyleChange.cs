@@ -11,7 +11,5 @@ public class StyleChange : MonoBehaviour
     public void ChosenStyle()
     {
         CharacterPreview.sprite = sprite.sprite;
-        Debug.Log(sprite.name);
-        Debug.Log(CharacterPreview.sprite.name);
     }
 }

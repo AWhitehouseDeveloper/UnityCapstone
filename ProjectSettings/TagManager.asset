@@ -8,6 +8,8 @@ TagManager:
   - Hair
   - Top
   - Bottoms
+  - Eyes
+  - Skin
   layers:
   - Default
   - TransparentFX

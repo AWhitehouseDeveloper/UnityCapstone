@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5339916645654135760}
+      - m_Target: {fileID: 398565897247902472}
         m_TargetAssemblyTypeName: ColourChange, Assembly-CSharp
         m_MethodName: OnChange
         m_Mode: 1
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 773898162669991641}
+      - m_Target: {fileID: 398565897247902472}
         m_TargetAssemblyTypeName: ColourChange, Assembly-CSharp
         m_MethodName: OnChange
         m_Mode: 1

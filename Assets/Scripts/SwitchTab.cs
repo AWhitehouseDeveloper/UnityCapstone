@@ -12,7 +12,6 @@ public class SwitchTab : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log(tag);
         foreach (GameObject obj in hidden)
         {
             if (obj.tag == tag)

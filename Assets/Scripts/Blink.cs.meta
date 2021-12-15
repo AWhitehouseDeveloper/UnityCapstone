@@ -3,7 +3,10 @@ guid: e7751d1bcc58593469af6d7d314ce232
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blink: {fileID: 21300000, guid: d3b83bf81524919469ac888be4925a46, type: 3}
+  - open: {fileID: 21300000, guid: 8298e578afe676e4f8cc5b120ec7c2c8, type: 3}
+  - model: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
